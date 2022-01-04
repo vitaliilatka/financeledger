@@ -9,10 +9,10 @@
     > li { position: relative; }
   }
   
-  .#{$fa-css-prefix}-li {
-    left: -$fa-li-width;
-    position: absolute;
-    text-align: center;
-    width: $fa-li-width;
-    line-height: inherit;
-  }
+.#{$fa-css-prefix}-li {
+  left: -$fa-li-width;
+  position: absolute;
+  text-align: center;
+  width: $fa-li-width;
+  line-height: inherit;
+}

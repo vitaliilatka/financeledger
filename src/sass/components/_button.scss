@@ -1,0 +1,77 @@
+.button {
+  display: inline-block;
+  font-family: inherit;
+
+  min-width: 165px;
+  height: 48px;
+
+  border-radius: 5px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+
+  outline-color: $white;
+
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function;
+
+  cursor: pointer;
+}
+
+.button__primary {
+  color: $white;
+  background-color: $accent-color;
+
+  opacity: 1;
+  border: none;
+
+  transition: opacity 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: fa-content($fa-var-angle-right);
+    margin-right: 5px;
+  }
+}
+
+.button_secondary {
+  color: $white;
+  border: 1px solid $white;
+
+  transition: color 250ms $timing-function,
+  background-color 250ms $timing-function, border 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+  }
+}
+
+.button_theme_green {
+  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.button_theme_blue {
+  background-color: $blog-color;
+  &:hover,
+  &:focus {
+    color: $blog-color;
+    border: 1px solid $blog-color;
+  }
+}

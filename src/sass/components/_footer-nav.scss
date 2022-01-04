@@ -1,0 +1,15 @@
+.footer-nav {
+  margin-bottom: 9px;
+}
+ 
+.copyright {
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  @include tablet() {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
