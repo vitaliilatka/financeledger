@@ -7,7 +7,7 @@
         "dev": "parcel src/*.html",
         "build": "parcel build src/*.html",
         "predeploy": "npm run build -- --public-url /financeledger/",
-        "deploy": "gh-pages -d dist"
+        "deploy": "netlify deploy -p"
     },
     "homepage": "https://github.com/vitaliilatka/financeledger#readme",
     "repository": {
