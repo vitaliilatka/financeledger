@@ -1,25 +1,32 @@
 /* Core variables */
+
 @import './utils/vars';
 
 /* CSS Reset */
-@import './base/reset';
+
+// @import './base/reset';
 
 /* Fonts */
+
 @import './base/fonts';
 
 /* Mixins, helpers and functions */
+
 @import './utils/mixins';
 @import './utils/visually-hidden';
 
 /* Adding Font Awesome*/
+
 @import './base/fontawesome/fontawesome.scss';
 @import './base/fontawesome/solid.scss';
 @import './base/fontawesome/brands.scss';
 
 /* Adding breakpoints */
+
 @import './utils/breakpoints.scss';
 
 /* Components */
+
 @import './layout/body.scss';
 @import './layout/container.scss';
 @import './layout/header.scss';
@@ -29,8 +36,11 @@
 @import './components/button.scss';
 @import './layout/services.scss';
 @import './layout/about.scss';
+@import './layout/cases.scss';
 @import './layout/blog.scss';
 @import './components/social.scss';
 @import './layout/team.scss';
+@import './layout/contact.scss';
+@import './components/form.scss';
 @import './layout/footer.scss';
 @import './components/footer-nav.scss';
