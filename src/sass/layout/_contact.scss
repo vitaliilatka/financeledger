@@ -2,27 +2,23 @@
     @include tablet() {
         display: flex;
     }
-
     &::before {
         display: block;
         content: '';
         width: 100%;
         max-width: 700px;
         height: 220px;
-
         margin-left: auto;
         margin-right: auto;
-
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
         @include mobile() {
-            
+            background-image: url('../images/home/contact.jpg');
         }
         @media screen and (max-width: $tablet - 1px) and (min-device-pixel-ratio: 2),
-            screen and (max-width: $tablet - 1px) and (min-resolution: 192dpi),
-            screen and (max-width: $tablet - 1px) and (min-resolution: 2dppx) {
+        screen and (max-width: $tablet - 1px) and (min-resolution: 192dpi),
+        screen and (max-width: $tablet - 1px) and (min-resolution: 2dppx) {
             background-image: url('../images/home/contact@2x.jpg');
         }
         @include tablet() {
@@ -31,8 +27,8 @@
             background-image: url('../images/home/contact.jpg');
         }
         @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) and (min-device-pixel-ratio: 2),
-            screen and (min-width: $tablet) and (max-width: $desktop - 1px) and (min-resolution: 192dpi),
-            screen and (min-width: $tablet) and (max-width: $desktop - 1px) and (min-resolution: 2dppx) {
+        screen and (min-width: $tablet) and (max-width: $desktop - 1px) and (min-resolution: 192dpi),
+        screen and (min-width: $tablet) and (max-width: $desktop - 1px) and (min-resolution: 2dppx) {
             background-image: url('../images/home/contact@2x.jpg');
         }
         @include desktop() {
@@ -40,15 +36,15 @@
             background-image: url('../images/home/contact.jpg');
         }
         @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
-            screen and (min-width: $desktop) and (min-resolution: 192dpi),
-            screen and (min-width: $desktop) and (min-resolution: 2dppx) {
+        screen and (min-width: $desktop) and (min-resolution: 192dpi),
+        screen and (min-width: $desktop) and (min-resolution: 2dppx) {
             background-image: url('../images/home/contact@2x.jpg');
         }
     }
 }
+
 .contact__wrapper {
     padding: 26px 30px;
-
     @include tablet() {
         width: calc(100% / 2);
     }
@@ -56,11 +52,10 @@
         padding: 78px 30px;
     }
 }
+
 .contact__title {
     margin-bottom: 34px;
-
     font-weight: 300;
     font-size: 38px;
     line-height: 1.26;
-    }
-    
+}
